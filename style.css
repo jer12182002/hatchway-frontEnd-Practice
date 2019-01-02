@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+}
+div {
+  border-style: solid;
+  width: 50vw;
+  height: 80vh;
+  overflow: scroll;
+  border-radius: 2%;
+}
+li {
+  position: relative;
+  list-style-type: none;
+  border-style: none none solid none;
+  border-color: grey;
+}
+img {
+  float: left;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: grey;
+}
+p {
+  color: grey;
+  position: relative;
+  left: 20px;
+}
+
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 20px;
+  padding: 18px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  float: right;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.collapsible:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
